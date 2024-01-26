@@ -16,12 +16,14 @@ function App() {
 ] 
   return (
     <div className="App">
+      <div className='expenses'>
       <ExpenseItem
         expenseData={expenses[0]}   
       />
       <ExpenseItem
         expenseData={expenses[1]}   
-      />      
+      />
+      </div>      
     </div>
   );
   }  
