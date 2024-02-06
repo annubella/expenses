@@ -18,6 +18,7 @@ function App() {
 ] 
   return (
     <div className="App">
+      <NewExpense></NewExpense>
       <div className='card expenses'>
       <ExpenseItem
         expenseData={expenses[0]}   

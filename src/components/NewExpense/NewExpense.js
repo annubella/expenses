@@ -1,6 +1,12 @@
+import ExpenseForm from './ExpenseForm'
+import './NewExpense.css'
+
 const NewExpense = (props) => {
     return (
-        <div></div>
+        <div className='new-expense'>
+            <ExpenseForm/>
+        </div>
     )
 } 
+
 export default NewExpense
