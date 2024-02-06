@@ -15,10 +15,16 @@ function App() {
       title: 'New jeans',
       price: 69.99 
     }  
-] 
+  ] 
+
+  const addExpenseHandler = (expense) =>{
+    console.log('in apps.js')
+    console.log(expense)
+  }
+
   return (
     <div className="App">
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler} ></NewExpense>
       <div className='card expenses'>
       <ExpenseItem
         expenseData={expenses[0]}   
